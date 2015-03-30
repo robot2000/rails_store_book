@@ -9,9 +9,21 @@
  <%= render "cart" %>
 </ul>
 
-<p>
-  <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
-</p>
+<table>
+  <tr>
+    <td>
+      <p>
+        <%= button_to "Checkout", new_order_path, method: :get %>
+      </p>
+    </td>
+
+    <td>
+      <p>
+        <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <p>
   <%= link_to 'Back to store', products_path %>
