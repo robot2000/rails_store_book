@@ -1,0 +1,15 @@
+<table>
+  <% @cart.product_carts.each do |item| %>
+    <tr>
+      <td><%= item.quantity %>&times;</td>
+      <td><%= item.product.title %></td>
+      <td><%= item.total_price %></td>
+      <td><%= button_to 'Delete', item, :method => :delete, :confirm => 'Are You Sure' %></td>
+    </tr>
+  <% end %>
+
+  <tr class="total_line">
+    <td colspan="2">Total</td>
+    <td class="total_cell"><%= @cart.total_price %></td>
+  </tr>
+</table>

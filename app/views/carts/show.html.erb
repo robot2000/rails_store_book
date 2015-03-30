@@ -1,0 +1,18 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h2>
+  Your Cart
+</h2>
+
+<ul>
+ <%= render "cart" %>
+</ul>
+
+<p>
+  <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+
+<p>
+  <%= link_to 'Back to store', products_path %>
+</p>

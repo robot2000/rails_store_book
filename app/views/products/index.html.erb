@@ -1,0 +1,14 @@
+<h1>My book's shop</h1>
+
+<table>
+  <%= render "product" %>
+</table>
+
+<br />
+<%= will_paginate @products %>
+
+
+<%= link_to 'New product', new_product_path %>
+
+
+
