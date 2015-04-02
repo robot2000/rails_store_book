@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 
+  mount_uploader :image, ProductImageUploader
   has_many :line_items
 
   before_destroy :ensure_not_referenced
