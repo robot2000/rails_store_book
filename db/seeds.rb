@@ -13,7 +13,7 @@ Product.create!(title: 'The Ruby language',
       </p>},
   image:   'book1.jpg',
   price: 90.00)
-# . . .
+#
 Product.create!(title: 'Icebreaker',
   description:
     %{<p>
@@ -21,8 +21,7 @@ Product.create!(title: 'Icebreaker',
       </p>},
   image: 'book2.jpg',
   price: 109.95)
-# . . .
-
+#
 Product.create!(title: 'Airport',
   description:
     %{<p>
@@ -30,7 +29,7 @@ Product.create!(title: 'Airport',
       </p>},
   image: 'book3.jpg',
   price: 80.00)
-
+#
 Product.create!(title: 'Das Kapital',
   description:
     %{<p>
@@ -38,7 +37,7 @@ Product.create!(title: 'Das Kapital',
       </p>},
   image: 'book4.jpg',
   price: 130.00)
-
+#
 Product.create!(title: 'The Kobzar',
   description:
     %{<p>
@@ -46,7 +45,7 @@ Product.create!(title: 'The Kobzar',
       </p>},
   image: 'book5.jpg',
   price: 200.00)
-
+#
 Product.create!(title: 'Stalker',
   description:
     %{<p>
@@ -54,3 +53,4 @@ Product.create!(title: 'Stalker',
       </p>},
   image: 'book6.jpg',
   price: 85.00)
+#
